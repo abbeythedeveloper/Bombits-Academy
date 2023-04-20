@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>BomBits</title>
+<link rel="stylesheet" href="volunteer.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--fav-icon-->
+<link rel="shortcut icon" href="./BomBits images/Asset 1.png"/>
+<style>
+   
+  
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: orangered;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+    <section class="main" style="background-image: url(images/hero-bg.png);">
+
+        <nav>
+            <a href="#" class="logo">
+                <img src="./BomBits images/Asset 1.png"/>
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Apply Now</a></li>
+                <li><a class="active-2" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Donate</a></li>
+                <li><a class="active" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="title-border1"></div>
+    
+    
+    
+    
+        <!-- FORM -->
+        
+        <div class="volform-row">
+        <h1 class="vol-h1">Volunteer</h1>
+        <fieldset>
+        <p class="vol-p">Thank you for your interest in volunteering with <span id="bombits"> BOMBITS ICT ACADEMY</span>!
+        
+        Please note that we usually respond to this form within 48 business hours. We want you to have a great experience when you volunteer, so we limit the number of volunteers we accept each day.</p>  
+        <form class="volunteer-form">
+          <label class="vol-label" for="name">Name*</label>
+          <hr>
+          <br>
+          <input class="vol-input" id="name" type="text" name="first" placeholder="first" required>
+          <input class="vol-input" id="name" type="text" name="last" placeholder="last" required>
+          <br>
+          <label class="vol-label" for="mail">Address*</label>
+          <hr>
+          <br>
+          <input class="vol-input" id="mail" type="text" name="street" placeholder="street" required>
+          <br>
+          <input class="vol-input" id="mail" type="text" name="city" placeholder="city" required>
+          <select class="vol-input" name="state" id="state" required>
+          <option value="" selected="selected">Select a local Government</option>
+          <option value="EK">Eket</option>     
+          <option value="AB">Abak</option>
+          <option value="UY">Uyo</option>
+          <option value="EO">Eastern Obolo</option>
+          <option value="CA">Esit-Eket</option>
+          <option value="CO">Essien Udim</option>
+          <option value="CT">Etim-Ekpo</option>
+          <option value="DE">Etinan</option>
+          <option value="DC">Ibeno</option>
+          <option value="FL">Ibiono-Ibom</option>
+          <option value="GA">Ika</option>
+          <option value="GA">Ina</option>
+          <option value="HI">Ikono</option>
+          <option value="ID">Ikot Ekpene</option>
+          <option value="IL">Mbo</option>
+          <option value="IN">Mkpat-Enin</option>
+          <option value="IA">Nsit-Ibom</option>
+          <option value="IA">Nsit-Atai</option>
+          <option value="KS">Nsit-Ubium</option>
+          <option value="KY">Obot-Akara</option>
+          <option value="LA">Okobo</option>
+          <option value="ME">Onna</option>
+          <option value="MD">Oron</option>
+          <option value="MA">Oruk Anam</option>
+          <option value="MI">Ukanafun</option>
+          <option value="MN">Udung-Uko</option>
+          <option value="MS">Uruan</option>
+          <option value="MO">Urue-Offong/Oruko</option>
+        </select>
+        <input class="vol-input" id="mail" type="zipcode" name="zipcode" placeholder="zip code" required>
+        <br>
+        <label class="vol-label" for="email">Email*</label>
+        <hr>
+        <br>
+        <input class="vol-input" id="email" type="email" name="email" placeholder="email" required>
+        <br>
+        <label class="vol-label" for="haveyou">Have you ever volenteered before?*</label>
+        <hr>
+        <br>
+        <label class="vol-label">
+        <input class="vol-input" id="haveyou" type="radio" name="yesno" value="yes" required> Yes
+        <input class="vol-input" id="haveyou" type="radio" name="yesno" value="no" required> No
+        </label>
+        <br>
+        <label class="vol-label">What date are you interested in volenteering?*
+          <hr>
+        <br>
+        <input class="vol-input" id="date" type="date" name="date" required>
+        <p><span class="spanformlight">Volunteers are welcome any day (subject to schedule) from 10am to 3pm; we ask for a minimum 3 hour commitment</span></p>
+        </label>
+        <hr>
+        <br>
+        <label class="vol-label" for="phone">Phone*</label>
+        <hr>
+        <br>
+        <input class="vol-input" id="phone" type="phone" name="phone" placeholder="(***)***-****" required >
+        <br>
+        <br>
+        <label class="vol-label" for="emerg">Emergency Contact*</label>
+        <hr>
+        <br>
+        <input class="vol-input" id="emerg" type="text" name="emergname" placeholder="name" required>
+        <br>
+        <input class="vol-input" id="emerg" type="text" name="emergphone" placeholder="phone" required>
+        <br>
+        <br>
+        <label class="vol-label" for="medi">Do you have any medical conditions of which we should be aware? (Heart condition, Diabetes, Allergies etc.?)*
+        </label>
+        <hr>
+        <br>
+        <label class="vol-label">
+        <input class="vol-input" id="medi" type="radio" name="noyes" value="yesmed" required> Yes
+        <input class="vol-input" id="medi" type="radio" name="noyes" value="nomed" required> No
+        </label>
+        <br>
+        <p class="vol-label"><span class="spanformlight">*If this is your first time volenteering you will be required to fill out an insurance and legal form once you arrive**</span></p>
+        <hr>
+        <br>
+        <label class="vol-label" for="check">Please check this box to confirm that you or the one volenteering is over 19 years of age (for liability purposes)*</label>
+        <hr>
+        <br>
+        <label class="vol-label">
+        <input class="vol-input" id="check" type="checkbox" name="checkyes" required> <span class="spanformlight" >I confirm that I or the one volenteering is 19 or over</span>
+        </label>
+        <br>
+        <label class="vol-label">
+        <input class="vol-input" id="check" type="checkbox" name="checkyes"> <span class="spanformlight" >Subscribe to our Email list</span>
+        </label>
+        <hr>
+        <br>
+        <br>
+        <button class="button" type="submit" value="submit">Submit Form</button>
+        </form>
+        </fieldset>
+        </div>
+        
+
+
+    </section>
+
+    
+
+       
+
+    <!--footer------------->
+    <footer>
+        <p>Copyright (C) - 2023 | BomBits</p>
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>BomBits Academy | website </title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+    <!--Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+            <!-- FontAwesome Icons -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/33d9385cb4.js" crossorigin="anonymous"></script>
+
+    <!-- End Bootstrap CSS -->
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="counter.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style22.css">
+    <link rel="stylesheet" href="counter.js">
+    <link rel="stylesheet" href="volunteer.css">
+ 
+    <!--End Custom Css-->
+<!--fav-icon-->
+<link rel="shortcut icon" href="./BomBits images/Asset 1.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: orangered;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+    <section class="main" style="background-image: url(images/hero-bg.png);">
+
+        <nav id="nav">
+            <a href="#carouselExampleCaptions" class="logo">
+                <img src="./BomBits images/Asset 1.png"/>
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="#carouselExampleCaptions">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="portal.html">Results</a></li>
+                <li><a href="register.html">Apply Now</a></li>
+                <li><a href="contactwitnav.html">contact us</a></li>
+                <li><a class="active-2"  href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+        <!-- body -->
+        
+   
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid w-100 h-100 overflow-hidden"
+                    src="./BomBits images main/slider-img1.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>BomBits</h5>
+                    <p>A training program for adults to teach them how to use Computer Appreciation, Graphics Design, Web Design, and Digital Marketing. Our program will provide learners with the knowledge and skills to create effective visuals, design beautiful and functional websites, and market their business products online and offline.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100 h-100 overflow-hidden"
+                    src="https://cdn.pixabay.com/photo/2017/02/05/00/08/graduation-2038864_960_720.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Shree Suryodaya Secondary School</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100 h-100 overflow-hidden"
+                    src="https://cdn.pixabay.com/photo/2017/09/08/00/37/friend-2727305_960_720.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Shree Suryodaya Secondary School</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about mt-5">
+            <div class="container-fluid">
+                <h2 class="h1-responsive font-weight-bold text-center my-2">About</h2>
+                <!--Section description-->
+
+                <div class="row  pt-5 pb-5">
+
+                    <div class="col-lg-5 align-items-stretch video-box">
+                        <img src="./BomBits images main/slider-img4.jpg" style="width: 600px;" alt="">
+                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4"
+                            data-vbtype="video" data-autoplay="true"></a>
+                    </div>
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+                        <div class="content">
+                            <h3>BomBits Academy<strong></strong></h3>
+                            <p>In today's increasingly digitized world, having digital skills is essential for success in almost any field. BomBits offers one year of hands-on training in ICT and multimedia, web development, and web and graphic design skills to teenagers and young adults (whose families cannot afford a university education and who make less than 30,000 naira per month). BomBits fights poverty and spurs economic growth. More than ever, it is essential to teach the next generation the skills they need to become competent designers and developers in the thriving ICT sector.
+
+                            </p>
+                            <p class="font-italic">The Bits Academy program helps people develop as freelancers and business owners. In addition, the instruction includes practical life skills that aid the children in overcoming their most pressing problems,, young people can learn a wide range of digital skills, including coding, web design. etc.
+                            </p>
+                            <p>
+                                Mission Statement
+                                    To foster the advancement of both male and female technologists, business owners, and leaders. The internet, graphic and online design, web development, and filmmaking are all areas where youth are making strides..</p>
+                             
+                    
+                            <p>
+                                Vision Statement
+                                To create a more prosperous, fair, and inclusive Nigerian society where youths are empowered to pursue their goals by granting them access to decent employment, high-quality education, and skill-building opportunities.
+                            </p>
+                        </div>
+
+                    </div>
+                    <button style="    background: #fd0000;
+                    width: 221px;
+                height: 53px;
+                margin-left: 1000px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                
+                color: #FFFFFF;"><a href="volunteer.html"><p>volunteer</p></a></button>
+
+                </div>
+                
+
+
+               
+            </div>
+        </section><!-- End About Section -->
+        <section style="background-color: white;">
+        <div class="services-heading">
+            <h2>OUR PROFESSIONAL COURSES</h2>
+            <p>Our programmes are speciffically designed for individuals seeking professional careers in the tech world</p>
+        </div>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="./BomBits images/developers.jpg">
+                <font>Become a full-stack developer in a year</font>
+                <p>"Master web development with our comprehensive course - enroll now!"</p>
+                <!--btn--------->
+                <a href="register.html">Apply Now</a>
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="./BomBits images/designers.jpg">
+                <font>Certification in Digital designs</font>
+                <p>"Unlock your creativity with our graphics design course - learn industry-standard tools and techniques, and turn your passion into a career!"</p>
+                <!--btn--------->
+                <a href="register.html">Apply Now</a>
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="./BomBits images/vivid-photographer-in-the-mountains-catches-a-shot.png">
+                <font>Photography | The course</font>
+                <p>"Develop your photography skills with our expert-led course. Learn to capture stunning images and tell compelling visual stories that leave a lasting impact."</p>
+                <!--btn--------->
+                <a href="register.html">Apply Now</a>
+            </div>
+            <!--box-4-------->
+            <div class="box">
+                <img src="./BomBits images/shine-multitasking-young-woman-meditating-1.png">
+                <font>Work ethics | Soft skills</font>
+                <p>"Learn essential work ethics and professionalism for a successful career. Enhance your employability and stand out in the workplace with our comprehensive course."</p>
+                <!--btn--------->
+                <a href="register.html">Apply Now</a>
+            </div>
+        </section>
+            <!--box-1-------->
+
+        </div>
+    </section>
+
+  
+         <div class="row copyright">
+           <div class="footer-menu">
+            <p>Copyright (C) - 2023 | BomBits</p>
+            </div>
+
+
+
+</body>
+
+</html>

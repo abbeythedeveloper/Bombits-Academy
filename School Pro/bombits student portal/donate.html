@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>BomBits | Volunteer</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style22.css">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!--fav-icon-->
+<link rel="shortcut icon" href="./BomBits images/Asset 1.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  /* margin: 8px 0; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+/* button {
+  background-color: orangered;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+   width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+} */
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: orangered;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+    <section class="main" style="background-image: url(images/hero-bg.png); margin-top: 80px;">
+
+        <nav>
+            <a href="#" class="logo">
+                <img src="./BomBits images/Asset 1.png"/>
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="portal.html">Results</a></li>
+                <li><a href="register.html">Apply Now</a></li>
+                <li><a class="active-2" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Donate</a></li>
+                <li><a class="active" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+          <h2> Donate-to-Bombits</h2>
+          <form method="POST">
+              <h4>Account</h4>
+              <div class="input-group">
+                  <div class="input-box">
+                      <input type="text" placeholder="Full Name" required class="name">
+                      <i class="fa fa-user icon"></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="text" placeholder="      Name on card" required class="name">
+                      <i class="fa fa-user icon"></i>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <input type="email" placeholder="Email Adress" required class="name">
+                      <i class="fa fa-envelope icon"></i>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <h4> Date of Birth</h4>
+                      <input type="text" placeholder="DD" class="dob">
+                      <input type="text" placeholder="MM" class="dob">
+                      <input type="text" placeholder="YYYY" class="dob">
+                  </div>
+                  <div class="input-box">
+                      <h4> Gender</h4>
+                      <input type="radio" id="b1" name="gendar" checked class="radio">
+                      <label for="b1">Male</label>
+                      <input type="radio" id="b2" name="gendar" class="radio">
+                      <label for="b2">Female</label>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <h4>Payment Details</h4>
+                      <input type="radio" name="pay" id="bc1" checked class="radio">
+                      <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                      <input type="radio" name="pay" id="bc2" class="radio">
+                      <label for="bc2"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <input type="tel" placeholder="Card Number" required class="name">
+                      <i class="fa fa-credit-card icon"></i>
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <input type="tel" placeholder="Card CVC" required class="name">
+                      <i class="fa fa-credit-card icon"></i>
+                  </div>
+                  <div class="input-box1">
+                     
+                          <input type="text" placeholder="january">
+                      
+                          <input type="number" placeholder="2023">
+                      
+                  </div>
+              </div>
+              <div class="input-group">
+                  <div class="input-box">
+                      <button type="submit">PAY NOW</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+       
+    <!--footer------------->
+    <footer>
+      <hr>
+        <p>Copyright (C) - 2023 | BomBits</p>
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+
+</html>
